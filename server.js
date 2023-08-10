@@ -1,17 +1,12 @@
 //imports
 import express from "express";
+import testRoutes from './routes/testRoute.js'
 
 // rest object
 const app = express();
 
 // routes
-
-// test route
-app.get("/test", (req, res) => {
-  res.status(200).json({
-    message: "Welcome to Blood Bank Application",
-  });
-});
+app.use("/api/v1/test", testRoutes)
 
 // port
 const PORT = 8080;
