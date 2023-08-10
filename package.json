@@ -1,0 +1,15 @@
+{
+  "name": "mern-blood-bank-app",
+  "version": "1.0.0",
+  "description": "Mern Blood Bank Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "saiprakashpagadala"
+  },
+  "author": "Sai Prakash",
+  "license": "ISC"
+}
