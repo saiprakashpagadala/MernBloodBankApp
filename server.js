@@ -7,9 +7,13 @@ import morgan from "morgan";
 
 // file imports
 import testRoutes from "./routes/testRoute.js";
+import connectDB from "./config/db.js";
 
 // dotenv config
 dotenv.config();
+
+//db connection
+connectDB()
 
 // rest object
 const app = express();
