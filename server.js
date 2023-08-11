@@ -7,13 +7,14 @@ import morgan from "morgan";
 
 // file imports
 import testRoutes from "./routes/testRoute.js";
+import authRoutes from "./routes/authRoute.js";
 import connectDB from "./config/db.js";
 
 // dotenv config
 dotenv.config();
 
 //db connection
-connectDB()
+connectDB();
 
 // rest object
 const app = express();
@@ -25,6 +26,7 @@ app.use(morgan("dev"));
 
 // routes
 app.use("/api/v1/test", testRoutes);
+app.use("/api/v1/auth", authRoutes);
 
 // port
 const PORT = process.env.PORT || 8080;
